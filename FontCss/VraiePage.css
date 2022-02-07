@@ -1,0 +1,1161 @@
+#logo
+{
+	display:block;
+	margin:0 auto;
+	border-radius: 10px; 
+	border-left: 2px solid black;
+    border-right: 2px solid black;
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black; 
+	border-color: darkblue;
+}
+
+
+.descriptionsite
+{
+	text-align:center;
+	font-family: 'abelregular';
+	font-size: 1.5em;
+	color:darkblue;
+}
+
+span
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Titres du site */
+
+h1
+{
+    color: midnightblue;
+	text-align: center;
+	font-size: 4em; 
+	font-family: 'ambleregular';
+}
+
+h3
+{
+	color:darkblue;
+	text-align: center;
+	font-family: 'abelregular'; 
+	text-decoration: underline; 
+	font-size: 2em;
+}
+
+h2
+{
+	color:darkblue;
+	text-decoration: underline;
+	font-family: 'abelregular';
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top:20px;
+}
+
+h2#listeCircuits
+{
+	font-size: 2em;
+	text-decoration: none;
+}
+
+h2#titreInscription
+{
+	text-decoration: none;
+}
+
+a:hover 
+{
+	color:aqua;
+	font-weight:bold; 
+}
+
+/* CSS des body */
+
+body
+{
+	background-image: url(images/imagedefondbleu.jpg);
+	background-size:100% 100%; 
+}
+
+body#cnx
+{
+	background-image: url(images/imagedefondbleu.jpg);
+	background-size: cover;
+}
+
+body#circuit
+{
+	background-image: url(images/imagedefondbleu.jpg);
+	background-size:100% 100%; 
+}
+
+body#profil
+{
+	background-image: url(images/imagedefondbleu.jpg);
+	background-size:100% 100%; 
+	height:100%;
+}
+
+body#confirmInscrip
+{
+	background-image: url(images/imagedefondbleu.jpg);
+	background-size:100% 100%; 
+	height:720px;
+}
+
+body#reservation
+{
+	background-image: url(images/imagedefondbleu.jpg);
+	background-size:100% 100%; 
+	height:100%;
+} 
+
+html, body 
+{
+	margin:0;
+	padding:0.5px;
+}
+
+/* Liste */
+
+#listedestinations
+{
+	display:flex;
+	justify-content: center;
+	width:100%;
+}
+
+nav 
+{
+	background-color:rgb(90, 123, 224);
+	box-shadow: 0px 0px 12px 1px #000000; 
+	box-shadow: 0px 0px 12px 1px #000000;
+}
+
+.listeD
+{
+	justify-content: center;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'abelregular';
+	background-color:rgb(46, 168, 238);
+	color:darkblue;
+	list-style: none;
+	text-align: center;	
+	margin-right: auto;
+	margin-left:auto;
+	width : 160px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	padding-top:3px;
+	padding-bottom: 3px;
+	border:1px solid darkblue;
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 0px #000000; 
+	box-shadow: 0px 0px 9px 0px #000000;
+}
+
+.listeDgauche
+{
+	justify-content: center;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'abelregular';
+	background-color:rgb(46, 168, 238);
+	color:darkblue;
+	list-style: none;
+	text-align: center;	
+	width : 160px;
+	margin-right: 600px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	padding-top:3px;
+	padding-bottom: 3px;
+	border:1px solid darkblue;
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 0px #000000; 
+	box-shadow: 0px 0px 9px 0px #000000;
+}
+
+
+.listeDdroite
+{
+	justify-content: center;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;	
+	font-size: 30px;
+	font-family: 'abelregular';
+	background-color:rgb(46, 168, 238);
+	color:darkblue;
+	width : 160px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	padding-top:3px;
+	padding-bottom: 3px;
+	border-radius: 10px;
+	border:1px solid darkblue;
+	box-shadow: 0px 0px 9px 0px #000000; 
+	box-shadow: 0px 0px 9px 0px #000000;
+}
+
+nav a:hover
+{
+	background-color: darkblue;
+	transition: 1.2s;
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+}
+
+nav a:not(:hover)
+{
+	transition: 1.5s;
+}
+
+/* Liste circuits + paragraphes */
+
+.listeCircuits
+{
+	display: flex;
+	flex-direction: row;
+	font-family: 'abelregular';
+	font-size: 1.3em;
+	background-color:rgba(90, 123, 224, 0.5);
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	border: 2px solid aqua;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1.2s;
+	width : 70%;
+	color: rgb(1, 1, 80);
+}
+
+#infosReservation
+{
+	margin-left: 10px;
+	width: 25%;
+}
+
+.listeCircuits:hover
+{
+	transform:scale(1.05);
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+}
+.listeCircuits a
+{
+	margin-right: 30px;
+}
+
+p#infosCircuit
+{
+	line-height: 30px;
+	width: 30%;
+}
+
+p#infosActivite
+{
+	line-height: 25px; 
+	margin-left: 30px;
+	width: 35%;
+}
+
+.listeCircuits a
+{
+	text-decoration: none;
+	color: rgb(1, 1, 80);
+}
+
+.listeCircuits a:hover
+{
+	color: aqua;
+}
+
+p#textReservationHaut
+{
+	margin-top: 60px;
+	margin-bottom: 7px;
+	text-align: center;
+}
+
+p#textReservationBas
+{
+	margin-top: 7px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+p.ConfirmInscrip
+{
+	font-size: 2.5em;
+	font-family: 'abelregular';
+	text-align: center;
+	margin-top : 100px;
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:rgba(90, 123, 224, 0.5);
+	padding:15px;
+	border: 2px solid darkblue;
+	border-radius: 20px;
+}
+
+p.ErreurCnx
+{
+	font-size: 2em;
+	font-family: 'abelregular';
+	text-align: center;
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p#InfoReserv
+{
+	font-family: 'abelregular';
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 0px;
+	color: royalblue;
+}
+
+/* Accueil */
+
+.partieAccueil
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.accueiltexte
+{
+	text-align:center;
+	font-family: 'abelregular';
+	font-weight: bold;
+	font-size: 2em;
+	color:darkblue;
+}
+
+.descriptionsiteAccueil
+{
+	text-align:center;
+	font-family: 'abelregular';
+	font-size: 1.4em;
+	color:darkblue;
+	margin-bottom: 60px;
+}
+
+/* Page de profil */
+
+h2#TitreInfoProfil
+{
+	margin-top: 0px;
+}
+p#InfosProfil
+{
+	font-family: 'abelregular';
+	font-size: 1.5em;
+}
+
+#FullProfil
+{
+	background-color:rgba(90, 123, 224, 0.5);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius: 10px;
+	width: 500px;
+}
+
+.boutonFormProfil
+{
+	display:block;
+	margin:0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 2px; 
+	background-color: cornflowerblue;
+	border-radius: 5px;
+	border:1px;
+	width: 130px;
+	height: 32px;
+	font-family: 'abelregular';
+	font-size: 1.3em;
+	box-shadow: inset -1px 3px 8px 5px #1F87FF; 
+	box-shadow: inset -1px 3px 8px 5px #1F87FF;
+	background: cornflowerblue;
+}
+
+/*Les images */
+.Photos
+{
+	display:block;
+	margin: 0px 0px 0px 0px;
+	/* border: 2px solid aqua; */
+	border-radius: 8px;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1.2s;
+}
+
+.Photos:hover
+{
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+	transform: scale(1.10);
+}
+/* Liste des activités */
+
+.listeac
+{
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+/*Textes gauche/droite (+dubai) */
+
+.flottant
+{
+	display: flex;
+	flex-direction: row; 
+	justify-content: center;
+}
+
+.titres
+{
+	color:royalblue;
+}
+
+.textegauche
+{
+	color: royalblue;
+	text-align:justify;
+	margin: 0px 20px 0px 5px; 
+	font-family: 'ambleregular';
+	width: 520px; 
+	overflow: hidden; 
+}
+
+.textedroite
+{
+	color:royalblue;
+	text-align: justify;
+	margin: 0px 5px 0px 20px; 
+	font-family: 'abelregular';
+	font-size: 1.5em;
+	width: 520px; 
+  	overflow: hidden; 
+}
+
+/* Formulaire */
+
+.formulaire
+{
+	width: 61%;
+	margin-left: auto;
+	margin-right: auto;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1.2s;
+}
+
+.formulaire:hover
+{
+	transform:scale(1.10);
+}
+
+fieldset
+{
+	border-radius: 10px;
+	background-color:rgba(90, 123, 224, 0.5);
+	border-spacing: 0px;
+	border:0px;
+}
+
+.formTitre 
+{
+	text-align: center;
+	font-family: 'abelregular';
+	font-size: 1.7em;
+	color: darkblue;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+label
+{
+	font-family: 'abelregular';
+	margin-bottom: 20px;
+	font-size: 1.6em;
+	color: darkblue;
+	font-weight: bold;
+}
+
+label#infoReserv
+{
+	font-family: 'abelregular';
+	margin-bottom: 20px;
+	margin-left: 20px;
+	font-size: 1.6em;
+	color: darkblue;
+	font-weight: bold;
+}
+
+#nom, #prenom, #adresse, #numTel, #email, #mdp
+{
+	margin-bottom: 20px;
+	margin-left: 260px;
+	font-family: 'abelregular';
+	font-size: 1.3em;
+	border-radius: 5px;
+}
+
+.formulaireConnexion
+{
+	width: 51%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: auto;
+	
+}
+
+.formulaireInscription
+{
+	width : 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.formulaireCircuit
+{
+	width : 55%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:rgba(90, 123, 224, 0.5);
+	padding : 20px; 
+	border-radius: 10px;
+}
+
+.formulaireReservation
+{
+	background-color:rgba(90, 123, 224, 0.5);
+	width: 64%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+form#RechercheCircuit
+{
+	display: flex;
+	flex-direction: row;
+}
+.formulaireCircuitBoxes
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+/* Zone de texte du formulaire */
+
+#zoneE 
+{
+	background-color:rgb(206, 206, 206); 
+	font-family: 'abelregular';
+	font-size: 1.3em;
+	width: 600px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border: none;
+}
+
+#zoneEReserv
+{
+	background-color:rgb(206, 206, 206); 
+	font-family: 'abelregular';
+	font-size: 1.3em;
+	width: 600px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border: none;
+}
+
+#zoneE:hover, #zoneEcnx:hover, select#circuitDepart:hover, select#circuitDestination:hover,select#circuitReservation:hover,
+input#circuitDepart:hover,#zoneEReserv:hover
+{
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;	
+}
+
+#zoneE:focus, #zoneEcnx:focus, select#circuitDepart:focus, select#circuitDestination:focus,select#circuitReservation:focus,
+input#circuitDepart:focus,#zoneEReserv:focus, p.ConfirmInscrip:hover
+{
+	border: 2px solid aqua;
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+}
+
+#zoneEcnx
+{
+	background-color:rgb(206, 206, 206); 
+	font-family: 'abelregular';
+	font-size: 1.3em;
+	width: 95%;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border: none;
+}
+
+/* Champs select formulaire */
+
+select#circuitDestination
+{
+	border-radius: 10px;
+	height: 50px;
+	font-size: 1.2em;
+	padding-left: 16px;
+	margin-top: 20px;
+	font-family: 'abelregular';
+}
+
+select#circuitDepart
+{
+	border-radius: 10px;
+	height: 50px;
+	font-size: 1.2em;
+	font-family: 'abelregular';
+	margin-top : 53px;
+	margin-left: 15px;
+	color: black;
+}
+
+select#circuitReservation
+{
+	display: flex;
+	border-radius: 10px;
+	height: 50px;
+	font-size: 1.2em;
+	padding-left: 16px;
+	font-family: 'abelregular';
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+input#circuitDepart
+{
+	border-radius: 10px;
+	height: 45px;
+	font-size: 1.2em;
+	font-family: 'abelregular';
+	margin-top : 69px;
+	margin-left: 15px;
+}
+
+input#circuitRecherche
+{
+	border-radius: 10px;
+	border:1px;
+	height: 50px;
+	font-size: 1.2em;
+	font-family: 'abelregular';
+	margin-top : 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: cornflowerblue;
+	box-shadow: inset -1px 3px 8px 5px #1F87FF; 
+	box-shadow: inset -1px 3px 8px 5px #1F87FF;
+	background: cornflowerblue;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+input#circuitReserve
+{
+	border-radius: 10px;
+	border:1px;
+	height: 40px;
+	font-size: 1.2em;
+	font-family: 'abelregular';
+	margin-right: auto;
+	margin-left: auto;
+	background-color: cornflowerblue;
+	box-shadow: inset -1px 3px 8px 5px #1F87FF; 
+	box-shadow: inset -1px 3px 8px 5px #1F87FF;
+	background: cornflowerblue;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Text areas de formulaires */
+
+#commentaire 
+{
+	margin-left: 20px;
+	font-family: 'abelregular';
+	border-radius: 5px;
+	width: 850px;
+	height: 100px;
+	font-size: 1.3em;
+	border: none;
+}
+
+textarea:hover
+{
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;	
+}
+
+textarea:focus
+{
+	border: 2px solid aqua;
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+}
+
+:required
+{
+	outline: none;
+}
+
+/* Bouton submit du formulaire */
+
+a.boutonForm, a.boutonFormProfil
+{
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+.boutonForm
+{
+	display:block;
+	margin:0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 2px; 
+	background-color: cornflowerblue;
+	border-radius: 5px;
+	border:1px;
+	width: 100px;
+	height: 32px;
+	font-family: 'abelregular';
+	font-size: 1.3em;
+	box-shadow: inset -1px 3px 8px 5px #1F87FF; 
+	box-shadow: inset -1px 3px 8px 5px #1F87FF;
+	background: cornflowerblue;
+}
+
+.boutonForm:hover ,input#circuitRecherche:hover, input#circuitReserve:hover, .boutonFormProfil:hover
+{
+	background-color: darkblue;
+	transition-duration: 1.2s;
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+	color:aqua;
+	font-weight: bold;
+}
+
+.boutonForm:not(:hover), input#circuitRecherche:not(:hover), input#circuitReserve:not(:hover),.boutonFormProfil:not(:hover)
+{
+	transition: 1.2s;
+}
+
+input#circuitRecherche
+{
+	border-radius: 10px;
+	border:1px;
+	height: 50px;
+	font-size: 1.2em;
+	font-family: 'abelregular';
+	margin-top : 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: cornflowerblue;
+	box-shadow: inset -1px 3px 8px 5px #1F87FF; 
+	box-shadow: inset -1px 3px 8px 5px #1F87FF;
+	background: cornflowerblue;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+input#circuitReserve
+{
+	border-radius: 10px;
+	border:1px;
+	height: 40px;
+	font-size: 1.2em;
+	font-family: 'abelregular';
+	margin-right: auto;
+	margin-left: auto;
+	background-color: cornflowerblue;
+	box-shadow: inset -1px 3px 8px 5px #1F87FF; 
+	box-shadow: inset -1px 3px 8px 5px #1F87FF;
+	background: cornflowerblue;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Tableau */
+
+.titreTableau
+{
+	text-align: center;
+	font-family: 'ambleregular';
+	font-size: 1.8em;
+	color:darkblue;
+	text-decoration: underline;
+	text-decoration-color: darkblue;
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(15,0,206,0);
+	color: darkblue;
+}
+
+.partieTableau
+{
+	background-color:royalblue;
+	height: 450px;
+	width: 61%;
+	padding-top: 3px;
+	box-shadow: 0px 0px 12px 1px #000000; 
+	box-shadow: 0px 0px 12px 1px #000000;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-bottom: 80px;
+	padding-bottom: 30px;
+	margin-top: 80px;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1.2s;
+}
+
+.partieTableau:hover
+{
+	transform:scale(1.10);
+}
+
+table 
+{ 
+	width: 70%; /* largeur dans la page */
+	background-color: rgb(156, 181, 228);   /* couleur de fond */
+	background-image: url('sky.jpg'); /* image de fond */
+	margin-right: auto;
+	margin-left: auto	;
+	border: 3px solid darkblue;
+	border-spacing: 0px; /* permet au tableau d'avoir aucun espace entre le background et les bordures */
+	border-radius: 10px;
+	margin-bottom: 50px;
+} 
+
+th
+{
+	font-family: 'ambleregular';
+	border: 3px solid royalblue;
+	border-top: 0px;
+	background-color: cornflowerblue;
+	border-spacing: 0px;
+	border-radius: 9px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+td
+{
+	border: 2px solid cornflowerblue;
+	text-align: center;
+	font-family: 'ambleregular';
+}
+	
+.TabTitreGauche /* Titre tout à gauche du tableau */
+{
+	border-top: 0px;
+	border-left:0px;
+	background-color: cornflowerblue;
+	border-top-right-radius: 0px;
+}
+ 
+.TabTitreCentre /* Titre au centre du tableau */
+{
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.TabTitreDroite /* Titre tout à droite du tableau */
+{
+	border-top: 0px;
+	border-right:10px;
+	background-color: cornflowerblue;
+	border-top-left-radius: 0px;
+}
+
+.tabcolGP /* 1ere colonne à gauche */
+{
+	border-top: 0px;
+	border-left: 0px;
+}
+
+.tabcolDP /* 1ere colonne à droite */
+{
+	border-top: 0px;
+	border-right: 0px;
+}
+
+.tabcolG
+{
+	border-left: 0px;
+}
+
+.tabcolD
+{
+	border-right: 0px;
+}
+
+.tabcolGD /* Dernière colonne à gauche */
+{
+	border-left: 0px;
+	border-bottom: 0px;
+}
+
+.tabcolDD /* Dernière colonne à droite */
+{
+	border-right: 0px;
+	border-bottom:0px;
+}
+
+/* Couleurs dépendant du prix dans le tableau*/
+
+.prixEleve
+{
+	background-color: rgb(255, 80, 80);
+}
+
+.prixEleveCentre
+{
+	background-color: rgb(255, 80, 80);
+	border-bottom-width:0px;
+}
+
+.prixMoyen
+{
+	background-color: rgb(252, 200, 103);
+}
+
+.prixMoyenCentre
+{
+	background-color: rgb(252, 200, 103);
+	border-top-width: 0px;
+}
+
+.bonPrix
+{
+	background-color: rgb(49, 179, 49);
+}
+/* Footer */
+
+footer
+{
+	height:200px;
+	text-align: center;
+	margin-top: 80px;
+	background-image: linear-gradient(rgb(227, 229, 249),rgba(255, 255, 0, 0)), url(images/footerr.jpg);
+	background-size: 100% 100%;
+	padding-top:15px;
+}
+
+.titrePiedpage
+{
+	font-family: 'ambleregular';
+	font-size: 1.5em;
+	color: darkblue;
+	font-weight: bold;
+}
+
+.logosreseaux
+{
+	border-radius: 16px;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1.2s;
+}
+
+.logosreseaux:hover
+{
+	transition: 1.2s;
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+	transform:scale(1.15);
+}
+
+.logoinsta
+{
+	border-radius: 21px;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1.2s;
+}
+
+.logoinsta:hover
+{
+	box-shadow: 0px 0px 13px 5px aqua; 
+	box-shadow: 0px 0px 13px 5px aqua;
+	transform:scale(1.15);
+}
+
+/*Media queries 
+
+@media all and (min-device-width : 320px) and (max-device-width : 480px)
+{
+	#listedestinations
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		list-style-type: none;
+	}
+
+	
+	#listedestinations li
+	{
+		border: 3px solid royalblue;
+		border-radius: 10px;
+		background-color: royalblue;
+		width: 120px;
+		text-align: center;
+		border: 1px solid darkblue;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+		font-size: 1.5em;
+	}
+
+	#listedestinations a
+	{
+		color: aqua;
+	}
+	.flottant
+	{
+		display:flex;
+		flex-direction: column;
+	}
+
+	#partiefull
+	{
+		border: 6px solid royalblue;
+		border-radius: 15px;
+		width:900px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+	#partiefull h3
+	{
+		line-height: 15px ;
+		margin-left: auto;
+		margin-right: auto;
+		color: darkblue;
+	}
+
+	.textegauche
+	{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;	
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.8em;
+		width: 800px;
+	}
+
+	.Photos
+	{
+		margin-top: 40px;
+		margin-bottom: 50px;
+		border:0px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 700px;
+		height:500px;
+		border:2px solid white;
+	}
+
+	.textedroite
+	{
+		width: 800px;
+		margin-right: 10px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.8em;
+	}
+
+	.retour
+	{
+		border: 3px solid royalblue;
+		border-radius: 10px;
+		background-color: royalblue;
+		color: aqua;
+		width:280px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+		margin-top: 40px;
+		font-size: 1.8em;
+		white-space: nowrap;
+	}
+
+	.signature
+	{
+		font-size: 0.8em;
+	}
+}
+
+Polices d'ecriture*/
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('FontCss/Amble-Regular-webfont.eot');
+    src: url('FontCss/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('FontCss/Amble-Regular-webfont.woff2') format('woff2'),
+         url('FontCss/Amble-Regular-webfont.woff') format('woff'),
+         url('FontCss/Amble-Regular-webfont.ttf') format('truetype'),
+         url('FontCss/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'abelregular';
+    src: url('FontCss/abel-regular-webfont.eot');
+    src: url('FontCss/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('FontCss/abel-regular-webfont.woff2') format('woff2'),
+         url('FontCss/abel-regular-webfont.woff') format('woff'),
+         url('FontCss/abel-regular-webfont.ttf') format('truetype'),
+         url('FontCss/abel-regular-webfont.svg#abelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

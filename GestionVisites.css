@@ -1,0 +1,1556 @@
+html
+{
+    background-color: grey;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin:0px;
+}
+
+*
+{
+    box-sizing: border-box;
+    border-width: 0px;
+}
+
+.particles-js-canvas-el
+{
+    position: fixed;
+    z-index: -1;
+}
+
+
+.no-scroll::-webkit-scrollbar {display:none;}
+.no-scroll::-moz-scrollbar {display:none;}
+.no-scroll::-o-scrollbar {display:none;}
+.no-scroll::-google-ms-scrollbar {display:none;}
+.no-scroll::-khtml-scrollbar {display:none;}
+
+/* Logo du site */
+
+.placement-mid i
+{
+    font-size: 50px;
+} 
+
+#logo-entier
+{   
+    background-image: url("images/gold-background.jpg");
+    background-size: 180% auto; 
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 25px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 500ms;
+}    
+
+#logo-entier:hover
+{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#nom-logo
+{
+    width: 50%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* Les titres */
+
+.formTitre
+{
+    letter-spacing: 3px;
+    font-size: 1.5em;
+}
+
+h1#accueil
+{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+#cnx h2
+{
+    margin-top: 15px;
+    font-size: 2.4em;
+    letter-spacing: 3px;
+}
+
+.rapport-card h3
+{
+    font-weight: normal;
+}
+
+.rapport-card strong
+{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Page de connexion */
+
+.placement-mid
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cnx 
+{
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    border-radius: 5px;
+    width: 40%;
+    padding: 20px 50px 50px 50px;
+    min-width: 552px;
+    max-width: 600px;
+    height: fit-content;
+    max-height: 670px;
+    padding-bottom: 15px;
+
+    /* Centrer un élément HORIZONTALEMENT et VERTICALEMENT en position absolue  */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+
+    /* Centrer un élément en position absolue */
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:10vh;
+    left: 0;
+    right: 0;
+    text-align: center; */
+}
+
+.page-cnx /* Input login de la page de connexion */
+{   
+    background: none;
+    outline: none;
+    padding: 5px 0 5px 10px;
+    width: 50%;
+    height: 10%;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition-duration: 500ms;
+
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid white ;
+}
+.page-cnx:focus
+{
+    border-bottom: 2px solid rgb(255,215,0);
+    width: 70%;
+}
+
+.page-cnx::placeholder
+{
+    color: white;
+}
+
+input#zoneEcnx:focus
+{
+    /* border: 2px solid rgb(255,215,0); */
+    border: 3px solid #859398;
+    width: 70%;
+} 
+
+input#zoneEcnx.page-med:focus
+{
+    background-color: black;
+} 
+
+#zoneEcnx::placeholder
+{
+    color: white;
+}
+
+.boutonForm
+{
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 15px;
+    background: rgb(73,85,217);
+    border: none;
+    width: 48px;
+    height: 48px;
+    background: url("images/send-solid-48.png");
+    transition-duration: 500ms;
+}
+
+.boutonForm:hover
+{
+    filter: invert(1);
+}
+
+.erreurCnx 
+{
+    color: red;
+    border: 2px solid red;
+    border-radius: 15px;
+    letter-spacing: 3px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 10px ;
+    width: 85%;
+    margin: 20px auto 0 auto ;
+}
+
+
+
+
+
+/* Message d'accueil */
+
+#welcome-message
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -300px;
+    left: 0;
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: ComeFromTop;
+    animation-duration: 5s;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+    border-radius: 30px; 
+    z-index: 1000;
+}
+
+#welcome-message strong
+{
+    color: black;
+}
+
+@keyframes ComeFromTop
+{
+    100%,0%{
+        top:-200px;
+    }50%{
+        top:40vh;
+    }95%{
+        top: 40vh;
+    }99%{
+        top: -200px;
+    }
+}
+
+/* Navbar */
+
+nav#navbar /* La navbar */
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(63, 63, 63);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 30;
+
+    position: sticky;
+    top: -100px;
+    left: 5px;
+}
+
+nav#navbar a.menu /* Les liens de la navbar */
+{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    background: rgba(73, 73, 73, 0.562);
+    padding: 19px 15px 19px 30px;
+    transition-duration: 300ms;
+    width: 100%;
+}
+
+nav#navbar h4 
+{
+    text-align: left;
+    margin-left: 15px;
+}
+
+nav#navbar a:hover /* Effets au survol des liens de la navbar */
+{
+    box-shadow: 0 0 10px #eee;
+}
+
+#navbar-img /* div de l'image en haut de la navbar */
+{
+    display: flex;
+    justify-content: center;
+}
+
+#navbar-img img /* Image en haut de la navbar */
+{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin-top: 20px;
+}
+
+#deconnexion 
+{   
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 30px;
+    width:100%;
+    height:fit-content;
+    background: rgba(73, 73, 73, 0.562);
+    transition-duration: 500ms;
+    border-bottom-left-radius: 10px;
+}
+
+#deconnexion:hover
+{
+    box-shadow: 0 0 10px #eee;
+}
+
+
+/* Page d'accueil */
+
+.partieAccueil /* Parent de la partie droite de l'accueil (contient une div)*/
+{
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    display: block;
+    width: 80%;
+}
+
+body::-webkit-scrollbar /* Permet d'enlever l'affichage de toute les barres de scrolls */
+{
+    display: none;
+}
+
+#home-title-card /* Div sur le tableau de l'accueil */
+{
+    border-bottom: 2px solid white;
+    background-color: rgb(63, 63, 63);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+#home-title-card h2 /* Titre dans la div sur le tableau */
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin: 7px 0 7px 0;
+    text-align: center;
+}
+
+#info-card /* Card entière de la partie informations */
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    border-radius:10px;
+    padding-bottom: 2px;
+    max-height: 280px;
+}
+
+#home-title-card.right-title
+{
+    border: 2px solid white;
+}
+
+#info-card-content /* Div contenant les informations de la navbar */
+{
+    display: flex;
+    flex-direction: row;
+    border-top:0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0px 0 0px 25px;
+    line-height: 150%;
+    font-size: 1.2em;
+    width: 100%;
+} 
+
+#para1 /* Div des informations sur la navbar */
+{
+    width: 100%;
+}
+
+/* Tableau de l'accueil */
+
+ #home-last-rapport
+{
+    border-radius: 7px;
+    width: 100%;
+    padding: 0 30px;
+} 
+
+#info-card-content.home-tab
+{
+    padding: 0px;
+    border-collapse: none;
+    border-style: none;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table#rapport-table.home th
+{
+    border-top:0px;
+    padding: 15px;
+}
+
+table#rapport-table.home th:first-child
+{
+    border-top-left-radius: 0px;
+}
+
+table#rapport-table.home th:last-child
+{
+    border-top-right-radius: 0px;
+}
+
+/* Logos boutons + boutons de l'accueil */
+
+#home-small-icons
+{
+    margin-right: 7px;
+}
+
+.btn-grad 
+{
+    background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+}
+
+.btn-grad 
+{
+    margin: 10px;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.btn-grad:hover 
+{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 10px #eee;
+}
+
+/* Formulaire de création de rapport */
+
+#full-formulaire-rapport
+{
+    margin: auto auto;
+    width: 50%;
+    height: 80%;
+    margin-top: 30px;
+}
+
+form#FormRapport /* Le formulaire de création de rapport */
+{
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 400px;
+    height: fit-content;
+    font-size: 1.2em;
+    color: black;
+    text-align: left;
+    padding: 0px 30px 30px 30px;
+}
+
+.partieAccueil h1
+{
+    margin-bottom: 60px;
+}
+
+.formulaireRapport h2
+{
+    color: white;
+}
+
+#form-bloc /* Parent des deux blocs qui permet de les placer */
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+#form-bloc-left /* Bloc haut gauche du formulaire */
+{
+    width: 50%;
+}
+
+#form-bloc-right /* Bloc haut droite du formulaire */
+{
+    width: 50%;
+}
+
+form#FormRapport textarea,select,text,#FormDate,#FormQuantite
+{
+    appearance: none;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding: 7px 14px;
+    color: black;
+    width: 90%;
+    height: 48px;
+    text-align: left;
+    font-size: 1em;
+    outline: none; 
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+form label
+{
+    font-size: 1.5em;
+}
+
+#FormDate
+{
+    padding: 7px 14px;
+    font-size: 0.8em;
+    text-align: left;
+    width: 90%;
+    outline: none;
+}
+
+form#FormRapport select#FormMedicament, #FormQuantite
+{
+    width: 100%;
+}
+
+input[type=date]
+{
+    appearance: none;
+    background:none;
+    border: 2px solid grey;
+}
+
+#FormRapport textarea
+{
+    font-size: 1em;
+    height: 40px;
+    min-height: 65px;
+    max-height: 250px;
+    width: 60%;
+    min-width: 60%;
+    max-width: 90%;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    outline: none;
+}
+
+form#FormRapport summary
+{ 
+    list-style: none;
+    background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+    background-size: 200%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: white;
+    transition-duration: 500ms;
+}
+
+form#FormRapport summary:hover
+{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#FormRapport textarea:focus
+{
+    border: 3px solid #859398;
+}
+
+.form-disabled
+{
+    cursor: not-allowed;
+}
+
+label#RapportLabel
+{
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+}
+
+#FormSubmitRapport
+{
+    width: 90%;
+    border-radius: 15px;
+    color: white;
+    background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+    background-size: 200%;
+    padding: 10px 0;
+    font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+    transition-duration: 500ms;
+}
+
+#FormSubmitRapport:hover
+{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#FormRapport select:focus ,textarea:focus ,text:focus, #FormQuantite:focus, #FormDate:focus
+{
+    border: 3px solid #859398;
+}
+
+/* Page de liste des rapports (profil) */
+/* Formulaire de recherche de rapport */
+
+#search-bar-medecin
+{
+    position: sticky;
+    top:75px;
+    z-index: 100;
+}
+
+select#zoneEcnx 
+{
+    padding: 10px 15px;
+    width: 18%;
+    height: 10%;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    background-color: black;
+    outline: none;
+    border: 2px solid white ;
+    margin-top: 15px;
+    margin-bottom: 11px;
+    margin-right: 15px;
+    transition-duration: 500ms;
+}
+
+input#zoneEcnx
+{
+    padding: 5px 0 5px 10px;
+    width: 50%;
+    height: 10%;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    background: none;
+    outline: none;
+    border: 2px solid white ;
+    margin-top: 15px;
+    transition-duration: 500ms;
+}
+
+select#zoneEcnx:focus /* Barre de recherche par date de rapports */
+{
+    border: 2px solid #859398;
+    border-radius: 5px;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#search-bar-submit-rapport
+{
+    background:transparent;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 5px 5px 5px 7px;
+    transition-duration: 500ms;
+    margin-bottom: 15px;
+    margin-top: 11px;
+    margin-left: 7px;
+}
+
+#search-bar-submit-rapport:hover
+{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px 5px 5px 7px; 
+    filter: invert(1);
+}
+
+/* Contenu page liste rapport */
+
+#profil-content
+{
+    width: 80%; 
+    border-radius: 5px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+#profil-content h1
+{
+    font-size: 2.5em;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#full-rapport-card
+{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+#rapport-card
+{
+    display: flex;
+    text-align: left;
+    width: 1000%;
+    height: 10%;
+    min-height: 430px;
+    margin: 0 30px 50px 0;
+    padding: 0 15px 10px 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+}
+
+#details-hover
+{
+    margin: 0 auto 0 auto;
+    text-align: left;
+    width: fit-content;
+}
+
+span#details
+{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    -webkit-transition: all 1.25s ease-out;
+    -moz-transition: all 1.25s ease-out;
+    transition:1.5s ;
+    max-width: 450px;
+    font-weight: normal;
+} 
+
+
+h3#details:hover + span#details ,p#details:hover + span#details
+{
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.979);
+    backdrop-filter: blur(6px);
+    color: black;
+    border-radius: 5px;
+    padding: 7px;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+
+.modif-rapport-button
+{
+    z-index: 10;
+}
+
+.card-head
+{
+    background-color: rgb(65 , 95 , 226, 0.7);
+    width: 50%;
+    text-align: center;
+    margin: 15px auto 0 auto;
+    border-radius: 50px;
+    padding: 10px;
+}
+/* Tableau liste des rapport */
+
+table#rapport-table
+{
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0;
+}
+
+table#rapport-table th /* Tout les table header */
+{
+    text-align: center;
+    min-width: 100px;
+    max-width: 158px;
+    padding: 1em;
+    border-top: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    font-size: 1.2em;
+    background-color: rgb(59, 59, 59);
+    position:sticky;
+    top: 0px;
+}
+
+table#rapport-table th:first-child /* Le premier table header */
+{
+    border-left: 2px solid whitesmoke;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 2;
+}
+
+table#rapport-table th:last-child /* Le dernier table header */
+{
+    z-index: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+table#rapport-table tr td /* Toutes les cases des lignes */
+{
+    transition-duration: 350ms;
+    height: 80px;
+}
+
+table#rapport-table td /* Toutes les cases */
+{
+    text-align: center;
+    min-width: 120px;
+    max-width: 220px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.116);
+    background-color:rgba(94, 94, 94, 0.452);
+}
+
+table#rapport-table td:first-child /* 1ère case d'une ligne */
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+table#rapport-table td:last-child /* Dernière case d'une ligne */
+{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+}
+
+table#rapport-table tr:last-child td /* Dernière ligne : toute les cases */
+{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.384);
+}
+
+table#rapport-table tr:last-child td:first-child /* Dernière ligne : première case */
+{
+    border-bottom-left-radius: 15px;
+}
+
+table#rapport-table tr:last-child td:last-child /* Dernière ligne : dernière case */
+{
+    border-bottom-right-radius: 15px;
+}
+
+table#rapport-table td:first-child /* Toutes les 1ère cases */
+{
+    border-left: 2px solid rgba(255, 255, 255, 0.384);
+    border-right: 2px solid rgba(255, 255, 255, 0.384);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.384);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(6px);
+}
+
+table#rapport-table td:last-child /* Toutes les dernières cases */
+{
+    border-right: 2px solid rgba(255, 255, 255, 0.116);
+}
+
+table#rapport-table p
+{
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+
+table#rapport-table tr:hover
+{
+    box-shadow: 0 0 10px #eee;
+    border-radius: 18px;
+}
+
+table#rapport-table tr:hover td
+{
+    background-color:rgb(66, 66, 66);
+}
+
+table#rapport-table tr:hover a#rapport-modify-btn
+{  
+    opacity: 1;
+    z-index: 2;
+}
+
+a#rapport-modify-btn
+{
+    opacity: 0;
+    z-index: -1;
+    font-size: 1.3em;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px 6px 10px ;  
+    border-radius: 15px;
+    transition-duration: 500ms;
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+a#rapport-modify-btn:hover
+{
+    filter: invert(1);
+}
+
+
+
+
+
+
+/* Page liste de médecins */
+/* Barre de tri de médecins */
+
+nav#medecin-filter-bar
+{
+    display: flex;
+    width: fit-content;
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 1.3em;
+}
+
+#medecin-filter-bar p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 0 5px 10px ;
+} 
+
+#medecin-filter-bar a
+{
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    padding:5px 13px 0 13px;
+    transition-duration: 500ms;
+    font-style: italic;
+    border-radius:11px;
+}
+
+#medecin-filter-bar a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+#medecin-filter-bar a#medecin-list-nom 
+{
+    justify-content: space-between;
+    text-decoration: none;
+    padding:5px 13px 5px 13px;
+    transition-duration: 500ms;
+    font-style: italic;
+    border-radius:11px;
+    border-bottom-left-radius: 0px;
+}
+
+#medecin-filter-bar a#medecin-list-nom-under
+{
+    justify-content: space-between;
+    text-decoration: none;
+    padding-top: 0px;
+    padding:0px 13px;
+    transition-duration: 500ms;
+    font-style: italic;
+    border-radius:11px;
+}
+
+ul#medecin-filter-bar /* La liste entière */
+{
+    list-style: none;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 13px;
+    padding-left: 0px;
+}
+
+li#medecin-list-nom /* Éléments de la liste */
+{
+    position: relative;
+    padding-top: 5px;
+}
+
+ul#medecin-list-nom /* La sous-liste */ 
+{
+    display: none;
+    width: fit-content;
+    white-space:nowrap;
+    list-style: none;
+}
+
+li#medecin-list-nom:hover ul#medecin-list-nom /* Effets pour faire apparaître la sous liste lorsque l'on hover l'élément */
+{
+    display: block;
+    position: absolute;
+    top: 37px; 
+    left: 0px; 
+    text-align: center;
+    padding-left: 0px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition-duration: 500ms;
+}
+/* Contenu début page liste de médecins */
+
+h1#research-title {
+    overflow: hidden;
+    text-align: center;
+}
+  
+/* Traits à gauche et à droite des titres en haut de pages */
+h1#research-title:before,
+h1#research-title:after {
+    background-color: #fff;
+    border-radius: 15px;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 28%;
+    max-width: 280px;
+}
+
+h1#research-title:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h1#research-title:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+#search-bar-medecin
+{
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    width: fit-content;
+}
+
+#search-bar-medecin form
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar-medecin input[type=text]
+{
+    width: 60%;
+    font-size: 1.5em;
+    border-radius: 15px;
+    padding: 3px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+#search-bar-medecin input[type=text]:focus
+{
+    width: 80%;
+}
+
+#search-bar-submit /* Bouton submit des barres de recherche */
+{
+    background:transparent;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 5px 5px 5px 7px;
+    transition-duration: 500ms;
+    margin-bottom: 10px;
+}
+
+#search-bar-submit:hover
+{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px 5px 5px 7px; 
+    filter: invert(1);
+}
+
+#medecin-search-criteria /* Critère de recherche */
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 5px 0 5px 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#medecin-search-criteria a
+{
+    margin-left: 10px;
+    padding: 5px 7px 5px 5px;
+    border-top-right-radius:12px ;
+    border-bottom-right-radius:12px ;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition-duration: 500ms;
+    width: 100%;
+}
+
+#medecin-search-criteria a:hover
+{
+    filter: invert(1);
+}
+/* Contenu principal de la page de liste des médecins*/
+
+#medecin-content
+{
+    width: 90%;
+    padding: 10px;
+}
+
+#medecin-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 30%;
+    min-width: 350px;
+    max-height: fit-content;
+    border-radius: 15px;
+    font-size: 1.1em;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+    margin:0 0 50px 0;
+    transition-duration: 1s;
+    z-index: 1;
+}
+
+#medecin-card:hover
+{
+    transform: scale(1.15);
+    border: 1px solid white;
+}
+
+#medecin-img
+{
+    display: flex;
+    justify-content: center;
+}
+
+#medecin-img img 
+{
+    margin-top: 15px;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+}
+
+#medecin-infos
+{
+    width: 85%;
+    padding-left: 15px;
+}
+
+#medecin-infos h3
+{
+    text-align: center;
+}
+
+#medecin-infos-under
+{
+    display: flex;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.left-infos-under
+{
+    border-right: 1px solid rgb(255, 255, 255, 0.5);
+    border-right-width: 90%;
+    padding-right: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.right-infos-under
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.right-infos-under i
+{
+    padding-top: 2px;
+}
+
+.tel-link
+{
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#medecin-modify-btn
+{   
+    opacity: 0;
+    font-size: 1.3em;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px 6px 10px ;  
+    border-radius: 15px;
+    transition-duration: 500ms;
+    
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#medecin-modify-btn:hover, #medecin-list-rapport-btn:hover
+{
+    filter: invert(1);
+}
+
+#medecin-list-rapport-btn
+{   
+    opacity: 0;
+    font-size: 1.3em;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px 6px 10px ;  
+    border-radius: 15px;
+    transition-duration: 500ms;
+    
+    position: absolute;
+    top: 67px;
+    right: 15px;
+}
+
+
+#medecin-card:hover #medecin-modify-btn
+{
+    opacity: 1;
+}
+
+#medecin-card:hover #medecin-list-rapport-btn
+{
+    opacity: 1;
+}
+
+
+
+/* Page de modification de médecin */
+
+#medecin-card-modif
+{
+    padding: 30px;
+    width: 50%;
+    border-radius: 15px;
+    font-size: 1.1em;
+    margin:0 auto;
+    transition-duration: 1s;
+}
+
+#medecin-card-title
+{
+    text-align: center;
+}
+
+#medecin-card-modif form
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#medecin-card-modif form label
+{
+    font-size: 1.3em;
+}
+
+#medecin-card-modif form input
+{
+    outline: none;
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 7px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 1.1em;
+}
+
+#medecin-card-modif form input:focus
+{
+    border: 3px solid #859398;
+}
+ 
+#input-label /* Mettre le label au dessus de l'input s'il est flex */
+{
+    display:flex; 
+    flex-direction:column;
+    margin-right: 10px;
+    width: 50%;
+}
+
+#medecin-card-modif form input:last-child /* C'est le bouton submit */
+{
+    height: fit-content;
+}
+
+#bouton-modification
+{
+    width: 100%;
+    padding: 8px 0 8px 0px;
+    background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+    background-size: 200% auto;
+    transition-duration: 500ms;
+}
+
+#bouton-modification:hover
+{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Bouton retour en haut de page */
+
+#back-top-button
+{
+    background-color: black;
+    color: white;
+    padding: 6px 10px 11px 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    transition-duration: 500ms;
+}
+
+#back-top-button:hover
+{
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/* Pages de confirmation */
+
+#placement
+{
+    font-size: 1.7em;
+    border: 2px solid black; 
+
+    /* Centrer un élément HORIZONTALEMENT et VERTICALEMENT en position absolue */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+#confirmation 
+{
+    text-align: center;
+}
+
+#confirmInscrip
+{
+    text-align: center;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    backdrop-filter: blur(6px);
+    width: 30%;
+    height: 300px;
+    border-radius: 15px;
+
+    /* Centrer un élément HORIZONTALEMENT et VERTICALEMENT en position absolue */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+#confirmation h2 
+{
+    font-weight: normal;
+}
+
+#confirmation a 
+{
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    padding: 10px;
+    border: 2px solid black ;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+#confirmation a:hover
+{
+    background-color: white;
+}
+
+/* Loading animation */
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(63, 63, 63);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    color:white;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+
+.stop-scrolling
+{
+    overflow: hidden;
+    height: 100%;
+}
+  
