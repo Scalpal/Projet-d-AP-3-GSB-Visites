@@ -9,10 +9,10 @@ function controleurPrincipal($action) {
   $lesActions["accueilNW"] = "controleurAccueilNoWlcm.php";
 
   //Rapports
-  $lesActions["profil"] = "controleurProfil.php";
-  $lesActions["CreerRapport"]= "controleurProfil.php";
-  $lesActions["modificationRapport"] = "controleurProfil.php";
-  $lesActions["rechercheRapport"] = "controleurProfil.php";
+  $lesActions["profil"] = "controleurRapport.php";
+  $lesActions["CreerRapport"]= "controleurRapport.php";
+  $lesActions["modificationRapport"] = "controleurRapport.php";
+  $lesActions["rechercheRapport"] = "controleurRapport.php";
 
   //Médecins
   $lesActions["medecin"] = "controleurMedecin.php";  
